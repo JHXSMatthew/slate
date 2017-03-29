@@ -1,20 +1,36 @@
-# Errors
+# HTTP Errors
 
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files...just save them to the `includes` folder and add them to the top of your `index.md`'s frontmatter. Files are included in the order listed.</aside>
-
-The Kittn API uses the following error codes:
+```JSON
+{  
+   "header":{  
+      "status":"error"
+   },
+   "data":{  
+      "code":-1,
+      "message":"Required String parameter 'StatisticsArea' is not present"
+   }
+}
+```
+When you get an error, you alway GET a JSON response. The data section contains the error information.
+If you DID NOT get any JSON response, please report to our team and we will fix it or you may try again later.
+The Australian statistics API uses the following error codes in JSON format:
 
 
 Error Code | Meaning
 ---------- | -------
-400 | Bad Request -- Your request sucks
-401 | Unauthorized -- Your API key is wrong
-403 | Forbidden -- The kitten requested is hidden for administrators only
-404 | Not Found -- The specified kitten could not be found
-405 | Method Not Allowed -- You tried to access a kitten with an invalid method
-406 | Not Acceptable -- You requested a format that isn't json
-410 | Gone -- The kitten requested has been removed from our servers
-418 | I'm a teapot
-429 | Too Many Requests -- You're requesting too many kittens! Slow down!
-500 | Internal Server Error -- We had a problem with our server. Try again later.
-503 | Service Unavailable -- We're temporarily offline for maintenance. Please try again later.
+-1 | MissingServletRequestParameterException -- Required parameters Articles missing.
+0 | MethodArgumentNotValidException -- Your request sucks.
+1 | MethodArgumentTypeMismatchException -- Your request gives illegal format.
+2 | CannotParseStatsTypeException -- The area you specified not supported yet.
+3 | CannotParseCategoryException -- The Category you specificed does not exist.
+4 | CannotParseStateException -- The State you specificed does not exist.
+5 | CannotParseJSONException -- Our DB is down.
+6 | CannotFetchDataException -- Our DB is down.
+7 | ConstraintViolationException -- Bad reqeust. You are sending some invalid data.
+8 | NullPointerException -- We had a problem with our server. Report please.
+9 | ConversionFailedException -- We're temporarily offline for maintenance. Please try again later.
+10 | NoDataAvailableException -- Our DB does not have such data you required.
+11 | DateInvalidException -- No trolling please!
+
+
+NOTE: if error happens, no pretty JSON output is available.
