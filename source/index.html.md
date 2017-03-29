@@ -77,9 +77,9 @@ CrudMaterialAndInedible | Crud Material And Inedible
 MineralFuelLubricentAndRelatedMaterial | Mineral Fuel Lubricent And related material
 AnimalAndVegitableOilFatAndWaxes | Animal and vegitable oil fat and waxes
 ChemicalsAndRelatedProducts | Chemicals And Related Products
-ManufacutedGoods | Manufacuted Goods
+ManufacturedGoods | Manufacuted Goods
 MachineryAndTransportEquipments | Machinery And Transport Equipments
-OtherManucacturedArticles | Other Manucactured Articles
+OtherManufacturedArticles | Other Manucactured Articles
 Unclassified | Unclassified
 
 ## Date
@@ -336,9 +336,9 @@ CrudMaterialAndInedible | Crud Material And Inedible
 MineralFuelLubricentAndRelatedMaterial | Mineral Fuel Lubricent And related material
 AnimalAndVegitableOilFatAndWaxes | Animal and vegitable oil fat and waxes
 ChemicalsAndRelatedProducts | Chemicals And Related Products
-ManufacutedGoods | Manufacuted Goods
+ManufacturedGoods | Manufacuted Goods
 MachineryAndTransportEquipments | Machinery And Transport Equipments
-OtherManucacturedArticles | Other Manucactured Articles
+OtherManufacturedArticles | Other Manucactured Articles
 Unclassified | Unclassified
 
 ## Response format
